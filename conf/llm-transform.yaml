@@ -1,0 +1,17 @@
+server:
+  addr: "127.0.0.1:9001"
+
+logging:
+  log_level: "info"
+  log_directory: "/Users/liuyifeng/Documents/Code/orion-llm-transform/logs"
+  log_file: "llm-transform.log"
+
+headers:
+  set:
+    - key: ":path"
+      value: "/chat/completions"
+    - key: "Authorization"
+      value: "Bearer sk-8c6d7bafba3746df8d4bb9613ad7a197"
+    - key: "Host"
+      value: "api.deepseek.com"
+  remove: []
